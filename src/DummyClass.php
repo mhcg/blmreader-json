@@ -3,15 +3,14 @@
 /**
  * Dummy file.
  *
- * @package Dummy
+ * @package MHCG\BLMReaderJsonTests
  * @author  MHCG LTD <contact@mhcg.co.uk>
  * @license https://opensource.org/licenses/MIT MIT
- * @link    https://github.com/mhcg/php-library-template
  */
 
 declare(strict_types=1);
 
-namespace Dummy;
+namespace MHCG\BLMReaderJson;
 
 /**
  * Dummy class.

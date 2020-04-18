@@ -1,13 +1,13 @@
 {
-    "name": "mhcg/library-name",
-    "description": "",
+    "name": "mhcg/blmreader-json",
+    "description": "Convert a BLM (RightMove) file into JSON.",
     "keywords": [],
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Your Name",
-            "email": "YourName@example.com",
+            "name": "Mark Heydon",
+            "email": "contact@mhcg.co.uk",
             "role": "Developer"
         }
     ],
@@ -19,18 +19,18 @@
         "squizlabs/php_codesniffer": "^3.5"
     },
     "autoload": {
-        "psr-0": {
-            "Dummy\\": "src/"
+        "psr-4": {
+            "MHCG\\BLMReaderJson\\": "src/"
         }
     },
     "autoload-dev": {
-        "psr-0": {
-            "DummyTests\\": "tests/"
+        "psr-4": {
+            "MHCG\\BLMReaderJsonTests\\": "tests/"
         }
     },
     "support": {
-        "issues": "https://github.com/mhcg/library-name/issues",
-        "wiki": "https://github.com/mhcg/library-name/wiki",
-        "source": "https://github.com/mhcg/library-name"
+        "issues": "https://github.com/mhcg/blmreader-json/issues",
+        "wiki": "https://github.com/mhcg/blmreader-json/wiki",
+        "source": "https://github.com/mhcg/blmreader-json"
     }
 }

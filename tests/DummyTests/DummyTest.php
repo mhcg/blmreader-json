@@ -8,9 +8,10 @@
 
 declare(strict_types=1);
 
-namespace DummyTests;
+namespace MHCG\BLMReaderJsonTests;
 
 use PHPUnit\Framework\TestCase;
+use MHCG\BLMReaderJson\DummyClass;
 
 /**
  * Dummy Test class.
@@ -25,7 +26,7 @@ class DummyTest extends TestCase
     public function testFunction()
     {
         // Assert.
-        $result = \Dummy\DummyClass::returnTrue();
+        $result = DummyClass::returnTrue();
         $this->assertTrue($result);
     }
 }
