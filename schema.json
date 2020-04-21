@@ -1,0 +1,73 @@
+{
+    "$schema": "http://json-schema.org/schema#",
+    "$id": "https://github.com/mhcg/blmreader-json/schema.json",
+    "type": "object",
+    "additionalProperties": true,
+    "required": [
+        "properties"
+    ],
+    "properties": {
+        "properties": {
+            "$id": "#/properties/properties",
+            "type": "array",
+            "additionalItems": true,
+            "items": {
+                "$id": "#/properties/properties/items",
+                "type": "object",
+                "additionalProperties": true,
+                "required": [
+                    "agentRef",
+                    "propertyAddress"
+                ],
+                "properties": {
+                    "agentRef": {
+                        "$id": "#/properties/properties/items/properties/agentRef",
+                        "type": "string"
+                    },
+                    "propertyAddress": {
+                        "$id": "#/properties/properties/items/properties/propertyAddress",
+                        "type": "object",
+                        "additionalProperties": true,
+                        "required": [
+                            "address1",
+                            "address2",
+                            "town",
+                            "postcode1",
+                            "postcode2"
+                        ],
+                        "properties": {
+                            "address1": {
+                                "$id": "#/properties/properties/items/properties/propertyAddress/properties/address1",
+                                "type": "string"
+                            },
+                            "address2": {
+                                "$id": "#/properties/properties/items/properties/propertyAddress/properties/address2",
+                                "type": "string"
+                            },
+                            "address3": {
+                                "$id": "#/properties/properties/items/properties/propertyAddress/properties/address3",
+                                "type": "string"
+                            },
+                            "address4": {
+                                "$id": "#/properties/properties/items/properties/propertyAddress/properties/address4",
+                                "type": "string"
+                            },
+                            "town": {
+                                "$id": "#/properties/properties/items/properties/propertyAddress/properties/town",
+                                "type": "string"
+                            },
+                            "postcode1": {
+                                "$id": "#/properties/properties/items/properties/propertyAddress/properties/postcode1",
+                                "type": "string"
+                            },
+                            "postcode2": {
+                                "$id": "#/properties/properties/items/properties/propertyAddress/properties/postcode2",
+                                "type": "string"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

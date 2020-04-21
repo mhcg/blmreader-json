@@ -4,7 +4,7 @@
     <arg name="basepath" value="./"/>
     <arg name="extensions" value="php"/>
 
-    <file>.</file>
+    <file>src/</file>
     <exclude-pattern>./vendor</exclude-pattern>
 
     <rule ref="PSR12"/>
