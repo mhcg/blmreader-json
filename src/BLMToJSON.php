@@ -14,7 +14,7 @@ declare(strict_types=1);
 namespace MHCG\BLMReaderJson;
 
 use BLM\Reader as BLMReader;
-use MHCG\BLMReaderJson\Objects\{Property,PropertyAddress};
+use MHCG\BLMReaderJson\Objects\Property;
 
 /**
  * Takes a BLM (RightMove) array containing fields from a BLM file and convert to JSON.
@@ -95,7 +95,7 @@ final class BLMToJSON
             $property = $this->blmArray[0];
 
             $propertyObject  = new Property($property['AGENT_REF'] ?: '');
-            $propertyObject->propertyAddress = new PropertyAddress(
+            $propertyObject->setPropertyAddress(
                 $property['ADDRESS_1'] ?: '',
                 $property['ADDRESS_2'] ?: '',
                 $property['ADDRESS_3'] ?: '',
